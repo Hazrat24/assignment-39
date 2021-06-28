@@ -1,0 +1,332 @@
+/* ========================================================
+    Startup CSS
+===========================================================*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.clear_fix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* ========================================================
+    Header Section CSS
+===========================================================*/
+
+#header_section {
+    background: #22c3a3;
+    padding: 20px 0;
+}
+
+#header_section .left_header_box {
+    float: left;
+    width: 30%;
+}
+
+#header_section .right_header_box {
+    float: right;
+    width: 70%;
+}
+
+#header_section .left_header_box a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 21px;
+}
+
+#header_section .right_header_box input {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#header_section .right_header_box span {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#header_section .right_header_box ul {
+    text-align: right;
+    list-style: none;
+    margin-top: -22px;
+}
+
+#header_section .right_header_box ul li {
+    display: inline-block;
+    margin-left: -5px;
+}
+
+#header_section .right_header_box ul li a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 10px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    position: relative;
+}
+
+#header_section .right_header_box ul li a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-bottom: 1px solid #fff;
+    transition: .5s;
+}
+
+#header_section .right_header_box ul li a:hover::after {
+    width: 100%;
+}
+
+/* ========================================================
+    Banner Section CSS
+===========================================================*/
+
+#banner_section {
+    background: url(https://i.ibb.co/YNn1hN0/assfignmentj.png?fbclid=IwAR2dD98jYWPnTZErkc4XZtyLa_LsEM0KVIpO4HjzkpFZU5fAKAIiC-cQbfk);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 220px 0;
+}
+
+#banner_section .banner_content {
+    text-align: center;
+}
+
+#banner_section .banner_content h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 46px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+#banner_section .banner_content h4 {
+    color: #cef2e9;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+#banner_section .banner_content .banner_button a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 2px solid #cbf1ea;
+    border-radius: 4px;
+    padding: 6px 20px;
+    transition: .5s;
+    transform: scale(1);
+}
+
+#banner_section .banner_content .banner_button a:hover {
+    letter-spacing: 5px;
+    transform: scale(1.2);
+}
+
+/* ========================================================
+    Service Section CSS
+===========================================================*/
+
+#service_section {
+    padding: 60px 0;
+}
+
+#service_section .service_title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#service_section .service_title h1 {
+    font-weight: 500;
+    font-size: 29px;
+    margin-bottom: 20px;
+    color: #4a515a;
+}
+
+#service_section .service_title p {
+    color: #777;
+    font-size: 14px;
+}
+
+#service_section .service_child_box .service_card {
+    float: left;
+    width: 24%;
+    text-align: center;
+    margin-right: 1%;
+    padding: 20px 5px;
+    transition: .5s;
+}
+
+#service_section .service_child_box .service_card i {
+    color: #22c3a3;
+    font-size: 40px;
+    margin-bottom: 35px;
+}
+
+#service_section .service_child_box .service_card h3 {
+    color: #444;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+#service_section .service_child_box .service_card p {
+    color: #777;
+    font-size: 13px;
+}
+
+#service_section .service_child_box .service_card:hover {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .8);
+}
+
+/* ========================================================
+    About Section CSS
+===========================================================*/
+
+#about_section {
+    padding: 60px 0;
+    border-top: 2px solid #22c3a3;
+}
+
+#about_section .about_title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#about_section .about_title h1 {
+    font-weight: 500;
+    font-size: 29px;
+    margin-bottom: 20px;
+    color: #4a515a;
+}
+
+#about_section .about_title p {
+    color: #777;
+    font-size: 14px;
+}
+
+#about_section .about_child_box .about_left_box {
+    float: left;
+    width: 43%;
+}
+
+.about_left_box img {
+    width: 100%;
+}
+
+#about_section .about_child_box .about_right_box {
+    float: right;
+    width: 53%;
+}
+
+#about_section .about_child_box .about_right_box h3 {
+    font-weight: 400;
+    color: #666;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+#about_section .about_child_box .about_right_box p {
+    color: #777;
+    font-size: 15px;
+    margin-bottom: 15px;
+    line-height: 20px;
+}
+
+/* ========================================================
+    Contact Section CSS
+===========================================================*/
+
+#contact_section {
+    padding: 60px 0;
+    background: #f6f6f6;
+}
+
+#contact_section .contact_title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#contact_section .contact_title h1 {
+    font-weight: 500;
+    font-size: 29px;
+    margin-bottom: 20px;
+    color: #4a515a;
+}
+
+#contact_section .contact_title p {
+    color: #777;
+    font-size: 14px;
+}
+
+.contact_child_box{
+    text-align: center;
+}
+
+.contact_card {
+    float: left;
+    width: 33.33%;
+}
+
+.contact_card i {
+    color: #22c3a3;
+    margin-bottom: 10px;
+}
+
+.contact_card p {
+    color: #777;
+    font-size: 15px;
+}
+
+/* ========================================================
+    Footer Section CSS
+===========================================================*/
+
+#top_footer_section {
+    background: #22c3a3;
+    padding: 20px 0;
+}
+
+#top_footer_section .footer_top {
+    text-align: center;
+}
+
+#top_footer_section .footer_top i {
+    color: #fff;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+#bottom_footer_section {
+    padding: 10px 0;
+    background: #222222;
+}
+
+#bottom_footer_section .footer_bottom {
+    text-align: center;
+}
+
+#bottom_footer_section .footer_bottom p {
+    color: #ddd;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+/* ========================================================
+    The End
+===========================================================*/
